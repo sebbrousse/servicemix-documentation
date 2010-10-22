@@ -6,7 +6,7 @@
 <h1></h1>
 
 <div class="left">
-  <h2>Quickstart<br/>Guide</h2>
+  <h2>Quickstart Guide</h2>
 </div>
 
 <div class="right">
@@ -15,7 +15,7 @@
 
 <div class="left">
   <a href="users-guide/index.html">
-    <h2>ServiceMix<br/>Manual</h2>
+    <h2>ServiceMix Manual</h2>
   </a>
 </div>
 
@@ -28,10 +28,24 @@
   <% } %>
 </div>
 
+<div class="left">
+  <a href="jbi/index.html">
+    <h2>ServiceMix JBI Manual</h2>
+  </a>
+</div>
+
+<div class="right">
+  Information about the JBI (Java Business Integration) support in Apache ServiceMix and a description for all the JBI components.
+  <% if (sitegen(engine)) { %>
+    <div class="pdf">
+      <a href="jbi/jbi-guide.pdf" class="pdf">PDF document</a>
+    </div>
+  <% } %>
+</div>
 
 <div class="left">
   <a href="karaf/index.html">
-    <h2>Karaf<br/>Manual</h2>
+    <h2>Karaf Manual</h2>
   </a>
 </div>
 
@@ -48,6 +62,4 @@
 <div class="right">
   Help pages for all the available commands in the Apache ServiceMix console.
 </div>
-
-
 </div>

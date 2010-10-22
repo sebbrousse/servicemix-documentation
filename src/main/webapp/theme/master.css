@@ -6,47 +6,132 @@ body {
   font-family:'Lucida Grande', Geneva, Verdana, Arial, sans-serif;  
   margin: 0px auto;
   width: 95%;
-  box-shadow: 3px 3px 7px #777;
   font-size: .8em;
-}
+  }
 
-nav {
-  display: block;
-  width: 20em;
-  float: left;
-  margin: 0px;
-  margin-bottom: 30px;
-}
-
-header {
-  width: 100%;
-  height: 50px;
-  background: url('images/bg.png') repeat-x right top;
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #ffffff;
-  text-align: center;
-}
-
-footer {
-  height: 25px;
-  background: url('images/bg.png') repeat-x right top;
-  margin-top: 30px;
+div#siteHeader {
+  background-color: #76a3cd;
+  padding-left: 20px;
+  padding-right: 20px;
   clear: both;
 }
 
-footer p {
-  color: #fff;
+div#siteHeader a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+div#siteHeader a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+div#siteHeader a:hover {
+  color: #ffffff;
+}
+
+ul.siteNav {
+  list-style-type: none;
+  padding:0;
+	margin:0;
+	position: relative;
+	left: 60px;
+  }
+  
+ul.siteNav li {
+	display: inline;
+	float: left;
+	padding: 0 20px;
+	}
+
+ul.siteNav li ul {
+  position:absolute;
+  margin-top:-1em;
+	margin-left:.5em;
+	display: none;
+  }
+
+ul.siteNav li a {
+	text-decoration: none;
+	padding: 5px;
+	}
+
+ul.siteNav li:hover ul { 
+display: block; 
+}
+
+ul.siteNav li ul {
+  list-style-type: none;
+  padding:0;
+	margin:0;
+  background-color: #76a3cd;
+}
+
+ul.siteNav li ul li { 
+clear: both;
+}
+
+div#docHeader {
+  background: #909090;
+  height: 50px;
+  color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+  vertical-align: top;
+  clear: both;
+  }
+
+div#docHeader a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+div#docHeader a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+div#docHeader a:hover {
+  color: #ffffff;
+}
+
+ul.docNav {
+  list-style-type: none;
+  }
+  
+ul.docNav li {
+  display: inline;
+  font-size: large;
+  padding: 0 40px;
+  }
+
+div#siteFooter {
+  height: 25px;
+  background-color: #76a3cd;
+  margin-top: 30px;
+  color: #ffffff;
   text-align: right;
+  vertical-align: bottom;
+  clear: both;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+div#content {
+   clear: both;
 }
 
 div#body {
   padding-left: 22.5em;
   margin-bottom: 30px;
-}
-
-div#page {
-  border: solid thin black;
+  }
+  
+div#nav {
+  display: block;
+  width: 20em;
+  float: left;
+  margin: 0px;
+  margin-bottom: 30px;
 }
 
 div.highlight pre {
@@ -65,7 +150,11 @@ tt {
 
 div#bookpicker {
   margin-left: -20em;
-  width: 700px;
+  width: 90%;
+}
+
+div#bookpicker a {
+  text-decoration: none;
 }
 
 div.left {
