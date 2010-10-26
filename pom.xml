@@ -38,13 +38,13 @@
   <properties>
     <netbeans.hint.deploy.server>Tomcat60</netbeans.hint.deploy.server>
     <jetty-port>8080</jetty-port>
-    <jetty-war-dir>${basedir}/target/webapp/</jetty-war-dir>
-    <karaf.version>2.1.99-SNAPSHOT</karaf.version>
+    <webapp.srcdir>${project.basedir}/src/main/webapp</webapp.srcdir>
+    <webapp.dir>${project.build.directory}/webapp</webapp.dir>
     <maven.wagon.version>1.0-beta-6</maven.wagon.version>
     <scalate.version>1.4-SNAPSHOT</scalate.version>
-    <scalate.editor>${env.SCALATE_EDITOR}</scalate.editor>
     <scalate.mode>production</scalate.mode>
     <scalate.workdir>${basedir}/target/scalateWorkDir</scalate.workdir>
+    <karaf.version>2.1.99-SNAPSHOT</karaf.version>
     <servicemix.version>4.3.0-SNAPSHOT</servicemix.version>
   </properties>
 
@@ -152,7 +152,7 @@
               <goal>copy-resources</goal>
             </goals>
             <configuration>
-              <outputDirectory>${project.build.directory}/webapp</outputDirectory>
+              <outputDirectory>${webapp.dir}/webapp</outputDirectory>
               <resources>
                 <resource>
                   <directory>src/main/webapp</directory>
@@ -174,12 +174,12 @@
             </goals>
             <phase>prepare-package</phase>
             <configuration>
-              <warSourceDirectory>${project.build.directory}/webapp</warSourceDirectory>
+              <warSourceDirectory>${webapp.dir}</warSourceDirectory>
             </configuration>
           </execution>
         </executions>
         <configuration>
-          <warSourceDirectory>${project.build.directory}/webapp</warSourceDirectory>
+          <warSourceDirectory>${webapp.dir}</warSourceDirectory>
           <remoteServerId>people.apache.org</remoteServerId>
           <remoteServerUrl>scp://people.apache.org/www/servicemix.apache.org/docs/${servicemix.version}</remoteServerUrl>
         </configuration>
@@ -195,7 +195,7 @@
         <artifactId>maven-war-plugin</artifactId>
         <version>2.1</version>
         <configuration>
-          <warSourceDirectory>${project.build.directory}/webapp</warSourceDirectory>
+          <warSourceDirectory>${webapp.dir}</warSourceDirectory>
           <archive>
             <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
           </archive>
@@ -206,17 +206,13 @@
         <artifactId>jetty-maven-plugin</artifactId>
         <version>7.1.5.v20100705</version>
         <configuration>
-          <!-- When editing the conf files, you can comment this line to run
-              mvn jetty:run
-             to have a live web site
-          -->
-          <webAppSourceDirectory>${jetty-war-dir}</webAppSourceDirectory>
-
+          <webAppConfig>
+            <contextPath>/</contextPath>
+            <baseResource implementation="org.eclipse.jetty.util.resource.ResourceCollection">
+              <resources>${webapp.srcdir},${webapp.dir}</resources>
+            </baseResource>
+          </webAppConfig>
           <systemProperties>
-            <systemProperty>
-              <name>scalate.editor</name>
-              <value>${scalate.editor}</value>
-            </systemProperty>
             <systemProperty>
               <name>scalate.workdir</name>
               <value>${scalate.workdir}</value>
@@ -277,7 +273,7 @@
             <goals>
               <goal>run</goal>
             </goals>
-            <phase>verify</phase>
+            <phase>package</phase>
           </execution>
         </executions>
       </plugin>
@@ -313,16 +309,6 @@
 
     </plugins>
   </build>
-
-  <profiles>
-    <profile>
-      <id>live</id>
-      <properties>
-        <jetty-war-dir>${basedir}/src/main/webapp/</jetty-war-dir>
-        <scalate.mode>development</scalate.mode>
-      </properties>
-    </profile>
-  </profiles>
 
   <!-- Scalate snapshots -->
   <repositories>
