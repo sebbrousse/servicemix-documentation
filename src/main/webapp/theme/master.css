@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family:'Lucida Grande', Geneva, Verdana, Arial, sans-serif;  
+  font-family: Verdana, Arial, sans-serif;  
   margin: 0px auto;
   width: 95%;
   font-size: .8em;
@@ -30,12 +30,17 @@ div#siteHeader a:hover {
   color: #ffffff;
 }
 
+div#siteHeader table, div#siteHeader td {
+  border: none;
+  vertical-align: middle;
+}
+
 ul.siteNav {
   list-style-type: none;
   padding:0;
-	margin:0;
-	position: relative;
-	left: 60px;
+  margin:0;
+  position: relative;
+  left:40%;
   }
   
 ul.siteNav li {
@@ -63,15 +68,19 @@ display: block;
 ul.siteNav li ul {
   list-style-type: none;
   padding:0;
-	margin:0;
+  margin:0;
+  margin-top:5px;
+  margin-bottom:5px;
   background-color: #76a3cd;
 }
 
 ul.siteNav li ul li { 
-clear: both;
+  clear: both;
+  margin:3px;
+  padding:3px;
 }
 
-div#docHeader {
+div#sectHeader {
   background: #909090;
   height: 50px;
   color: #ffffff;
@@ -81,25 +90,35 @@ div#docHeader {
   clear: both;
   }
 
-div#docHeader a:link {
+div#sectHeader a:link {
   color: #ffffff;
   text-decoration: none;
 }
 
-div#docHeader a:visited {
+div#sectHeader a:visited {
   color: #ffffff;
   text-decoration: none;
 }
 
-div#docHeader a:hover {
+div#sectHeader a:hover {
   color: #ffffff;
 }
 
-ul.docNav {
+div#sectHeader table, div#sectHeader td {
+  border: none;
+  }
+  
+div#sectHeader h1 {
+  border: none;
+  padding: 0;
+  margin: 0;
+  }
+  
+ul.sectNav {
   list-style-type: none;
   }
   
-ul.docNav li {
+ul.sectNav li {
   display: inline;
   font-size: large;
   padding: 0 40px;
@@ -119,12 +138,12 @@ div#siteFooter {
 
 div#content {
    clear: both;
+  margin: 30px;
 }
 
 div#body {
-  padding-left: 23.5em;
+  padding-left: 22.5em;
   margin-bottom: 30px;
-<<<<<<< HEAD
   }
   
 div#nav {
@@ -133,51 +152,6 @@ div#nav {
   float: left;
   margin: 0px;
   margin-bottom: 30px;
-=======
-}
-
-div#body h2 {
-  margin-left: -1em;
-  padding-top: 10px;
-}
-
-div#body h3 {
-  padding-top: 20px;
-  margin-left: -1em;
-}
-
-div#body h4 {
-  padding-top: 10px;
-  padding-bottom: 5px;
-}
-
-div#body table tr {
-  border: solid thin black;
-}
-
-div#body table {
-  border-spacing: 0px 0px;
-  border: solid thin #777777;
-  margin-left: 1em;
-  width: 90%
-}
-
-div#body table tr td {
-  border: solid thin #ededed;
-  padding: 2px;
-  font-size: .9em;
-}
-
-div#body table tr th {
-  border: solid thin #ededed;
-  background-color: #ededed;
-  padding: 2px;
-  font-size: .9em;
-}
-
-div#page {
-  border: solid thin black;
->>>>>>> 482f29100c65f986627cf735d9215ee361724f46
 }
 
 div.highlight pre {
@@ -187,22 +161,11 @@ div.highlight pre {
   margin-left: 1em;
   margin-right: 1em;
   padding: .5em;
-  margin-top: .5em;
-  margin-bottom: .5em;
 }
 
 tt {
   font-family: 'Courier', Courier, monospace;
   font-size: 1em;
-}
-
-div#bookpicker {
-  margin-left: -20em;
-  width: 90%;
-}
-
-div#bookpicker a {
-  text-decoration: none;
 }
 
 div.left {
@@ -232,4 +195,106 @@ div.right {
 div.pdf {
   padding-left: 20px;
   background: url('images/pdf.png') no-repeat left center;
+}
+
+div.tip, div.warn, div.note  {
+  position: relative;
+  left: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 90%;
+}
+
+div.tip h1:before {
+  content:url(/images/check.gif);
+  padding-right: 10px;
+}
+
+div.tip h1, div.warn h1, div.note h1 {
+  font-size: small;
+  padding-bottom: 5px;
+  margin: 0;
+  border-bottom: none;
+}
+
+div.tip {
+  background-color: #DDFADE;
+  border-color: #9EC49F;
+}
+
+div.warn {
+  background-color: #FFE7E7;
+  border-color: #DF9898;
+}
+
+div.note {
+  background-color: #FFFFDD;
+  border-color: #F7DF92;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: normal;
+    font-weight: bold;
+    padding: 2px;
+}
+
+h1 {
+    margin: 36px 0 4px 0;
+    border-bottom: 1px solid #919699;
+}
+
+h2 {
+    margin: 27px 0 4px 0;
+    border-bottom: 1px solid #919699;
+}
+
+h3 {
+    margin: 21px 0 4px 0;
+}
+
+h4 {
+    margin: 18px 0 4px 0;
+}
+
+h5 {
+    margin: 14px 0 4px 0;
+}
+
+h6 {
+    margin: 14px 0 4px 0;
+}
+
+table {
+    margin: 5px;
+    border-collapse: collapse;
+}
+
+td {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ddd;
+    padding: 5px;
+    vertical-align: top;
+    min-width: 0.6em;
+}
+
+th {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ddd;
+    padding: 5px;
+    background-color: #f0f0f0;
+    text-align: left;
+    vertical-align: top;
+    min-width: 0.6em;
+}
+
+a {
+  color: #5b8fbe;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #666;
 }
