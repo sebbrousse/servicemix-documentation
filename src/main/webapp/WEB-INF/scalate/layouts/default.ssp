@@ -17,6 +17,7 @@ limitations under the License.
 --%>
 <%@ var body: String %>
 <%@ var title: String = "Apache ServiceMix ${servicemix.version}" %>
+<%@ var style : String = "foo.css" %>
 <%@ var navigation: Boolean = true %>
 <% escapeMarkup = false %>
 <% import org.fusesource.scalate.servlet.ServletRenderContext._ %>
@@ -28,6 +29,7 @@ limitations under the License.
 
   <link href="${uri("/theme/master.css")}" rel="stylesheet" type="text/css" />
   <link href="${uri("/theme/pygmentize.css")}" rel="stylesheet" type="text/css" />
+  <link href="${style}" rel="stylesheet" type="text/css" />
 
   <script type="text/javascript" src="${uri("/scripts/jquery.js")}"></script>
   <script type="text/javascript" src="${uri("/scripts/jquery.cookie.js")}"></script>
