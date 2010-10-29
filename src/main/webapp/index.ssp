@@ -14,17 +14,12 @@
 
 <div class="left">
   <a href="users-guide/index.html">
-    <h2>ServiceMix Manual</h2>
+    <h2>User Guides</h2>
   </a>
 </div>
 
 <div class="right">
-  <p>The full reference manual, explaining about all the features and components in Apache ServiceMix.</p>
-  <% if (sitegen(engine)) { %>
-    <div class="pdf">
-      <a href="users-guide/manual.pdf" class="pdf">PDF document</a>
-    </div>
-  <% } %>
+  <p>Guides explaining all of the features and components in Apache ServiceMix.</p>
 </div>
 
 <div class="left">
