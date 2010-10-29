@@ -8,7 +8,7 @@
 </div>
 
 <div class="right">
-  If you're new to Apache ServiceMix, this document will guide you in your first steps in Apache ServiceMix.
+  <p>If you're new to Apache ServiceMix, this document will guide you in your first steps in Apache ServiceMix.</p>
 </div>
 
 <div class="left">
@@ -18,7 +18,7 @@
 </div>
 
 <div class="right">
-  The full reference manual, explaining about all the features and components in Apache ServiceMix
+  <p>The full reference manual, explaining about all the features and components in Apache ServiceMix.</p>
   <% if (sitegen(engine)) { %>
     <div class="pdf">
       <a href="users-guide/manual.pdf" class="pdf">PDF document</a>
@@ -33,7 +33,7 @@
 </div>
 
 <div class="right">
-  Information about the JBI (Java Business Integration) support in Apache ServiceMix and a description for all the JBI components.
+  <p>Information about the JBI (Java Business Integration) support in Apache ServiceMix and a description for all the JBI components.</p>
   <% if (sitegen(engine)) { %>
     <div class="pdf">
       <a href="jbi/jbi-guide.pdf" class="pdf">PDF document</a>
@@ -48,7 +48,7 @@
 </div>
 
 <div class="right">
-  Apache ServiceMix uses Apache Karaf as the underlying OSGi server runtime.  This manual will explain the features and functionality provided by Karaf.  
+  <p>Apache ServiceMix uses Apache Karaf as the underlying OSGi server runtime.  This manual will explain the features and functionality provided by Karaf.</p>
 </div>
 
 <div class="left">
@@ -58,6 +58,16 @@
 </div>
 
 <div class="right">
-  Help pages for all the available commands in the Apache ServiceMix console.
+  <p>Help pages for all the available commands in the Apache ServiceMix console.</p>
+</div>
+
+<div class="left">
+  <a href="commercial.html">
+    <h2>Commercial Documentation</h2>
+  </a>
+</div>
+
+<div class="right">
+  <p>Documentation from commercial providers and books you can buy.</p>
 </div>
 </div>

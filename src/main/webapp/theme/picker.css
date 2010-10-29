@@ -1,5 +1,5 @@
 div#bookpicker {
-  margin-left: -20em;
+  margin-left: -10em;
   width: 90%;
   }
 
@@ -8,32 +8,32 @@ div#bookpicker a {
   }
   
 div.left h1, div.left h2 {
+  overflow: visible;
   border-bottom: none;
-  }
+  margin: 0;
+  padding: 0;
+}
   
   div.left {
-  clear: both;
-  float: left;
-  text-align: right;
-  width: 30%;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  float:left;
+  width:30%;
+  text-align:right;
+  clear:both;
+  padding-bottom: 10px;
 }
 
 div.left h2 {
-  color: #333333;
+  color: #5C5C5C;
+  font-size: 14pt;
+  margin-right: 20px;
 }
 
 div.right {
-  float: right;
-  text-align: left;
-  width: 70%;
-  margin: auto;
-  color: #666666;
-  font-size: 120%;
-  margin-top: 1em;
-  margin-bottom: .75em;
-}
+  float:right;
+  width:70%;
+  text-align:left;
+  padding-bottom: 10px;
+  }
 
 div.pdf {
   padding-left: 20px;
