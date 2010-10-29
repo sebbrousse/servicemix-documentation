@@ -64,6 +64,11 @@
       <version>${scalate.version}</version>
     </dependency>
     <dependency>
+      <groupId>org.fusesource.scalate</groupId>
+      <artifactId>scalate-page</artifactId>
+      <version>${scalate.version}</version>
+    </dependency>
+    <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
       <version>0.9.24</version>

@@ -113,10 +113,13 @@ limitations under the License.
         <div id="nav">
             ${include(toc(requestUri))}
         </div>
+        <div id="body">
+          <%= body %>
+        </div>
       <% } %>
-      <div id="body">
+      <% if (!navigation) { %>
         <%= body %>
-      </div>
+      <% } %>
     </div>
       <div id="siteFooter">
         <p>Thanks for using Apache ServiceMix!</p>
