@@ -1,4 +1,5 @@
 <% import org.apache.servicemix.documentation.Helper._ %>
+<% attributes("title") = "Home" %>
 <% attributes("navigation") = false %>
 <% attributes("style") = "/theme/picker.css" %>
 <div id="bookpicker">
@@ -63,7 +64,7 @@
 
 <div class="left">
   <a href="commercial.html">
-    <h2>Commercial Documentation</h2>
+    <h2>Commercial Guides</h2>
   </a>
 </div>
 

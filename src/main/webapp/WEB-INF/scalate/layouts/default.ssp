@@ -16,7 +16,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 --%>
 <%@ var body: String %>
-<%@ var title: String = "Apache ServiceMix ${servicemix.version}" %>
+<%@ var title: String = "" %>
 <%@ var style : String = "foo.css" %>
 <%@ var navigation: Boolean = true %>
 <% escapeMarkup = false %>
@@ -25,7 +25,7 @@ limitations under the License.
 <!DOCTYPE html>
 <html>
 <head>
-  <title>${title}</title>
+  <title>Apache ServiceMix Documentation - ${title}</title>
 
   <link href="${uri("/theme/master.css")}" rel="stylesheet" type="text/css" />
   <link href="${uri("/theme/pygmentize.css")}" rel="stylesheet" type="text/css" />
