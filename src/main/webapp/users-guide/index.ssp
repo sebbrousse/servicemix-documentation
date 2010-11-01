@@ -18,6 +18,21 @@
 </div>
 
 <div class="left">
+  <a href="activemq/index.html">
+    <h2>Using ActiveMQ</h2>
+  </a>
+</div>
+
+<div class="right">
+  <p>Guide to using Apache ActiveMQ messaging in Apache ServiceMix.</p>
+  <% if (sitegen(engine)) { %>
+    <div class="pdf">
+      <a href="activemq/manual.pdf" class="pdf">PDF document</a>
+    </div>
+  <% } %>
+</div>
+
+<div class="left">
   <a href="camel/index.html">
     <h2>Using Camel</h2>
   </a>
