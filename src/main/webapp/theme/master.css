@@ -40,7 +40,7 @@ ul.siteNav {
   padding:0;
   margin:0;
   position: relative;
-  left:60%;
+  left:40%;
   }
   
 ul.siteNav li {
@@ -49,79 +49,69 @@ ul.siteNav li {
 	padding: 0 20px;
 	}
 
-ul.siteNav li ul {
-  position:absolute;
-  margin-top:-1em;
-	margin-left:.5em;
-	display: none;
-  }
-
 ul.siteNav li a {
 	text-decoration: none;
 	padding: 5px;
 	}
 
-ul.siteNav li:hover ul { 
-display: block; 
-}
+ul.siteNav .index a {
+  padding-right: 1em;
+  position: relative;
+  z-index: 15;
+  padding-bottom: 0.125em;
+  }
 
-ul.siteNav li ul {
+div#guidelist {
+  width: 27em;
+  display: block;
+  background: #B8B8B8;
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -webkit-box-shadow: 0.25em 0.25em 1em rgba(0,0,0,0.25);
+  -moz-box-shadow: rgba(0,0,0,0.25) 0.25em 0.25em 1em;
+  color: #f1938c;
+  padding: 1.5em 2em;
+  position: absolute;
+  z-index: 10;
+  top: -0.25em;
+  left: 10%;
+  padding-top: 2em;
+  }
+
+div#guidelist ul {
   list-style-type: none;
   padding:0;
   margin:0;
   margin-top:5px;
   margin-bottom:5px;
-  background-color: #76a3cd;
+  background-color: #B8B8B8;
 }
 
-ul.siteNav li ul li { 
-  clear: both;
-  margin:3px;
-  padding:3px;
+div#guidelist li { 
+	padding: 0;
+    margin: 0;
+    float: none;
 }
 
-div#sectHeader {
-  background: #909090;
-  height: 50px;
-  color: #ffffff;
-  padding-left: 20px;
-  padding-right: 20px;
-  vertical-align: top;
-  clear: both;
-  }
-
-div#sectHeader a:link {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-div#sectHeader a:visited {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-div#sectHeader a:hover {
-  color: #ffffff;
-}
-
-div#sectHeader table, div#sectHeader td {
-  border: none;
-  }
-  
-div#sectHeader h1 {
-  border: none;
+div#guidelist h1 {
+  color: white;
+  border-bottom: none;
+  font-size: small;
+  font-weight: bold;
+  margin: 0.5em 0 0;
   padding: 0;
+}
+
+div#guidelist .leftlist, div#guidelist .rightlist {
+  float: left;
+  width: 50%;
   margin: 0;
+  padding: 0;
   }
   
-ul.sectNav {
-  list-style-type: none;
-  }
-  
-ul.sectNav li {
-  display: inline;
-  font-size: large;
-  padding: 0 40px;
+div#guidelist .rightlist {
+  float: right;
   }
 
 div#siteFooter {

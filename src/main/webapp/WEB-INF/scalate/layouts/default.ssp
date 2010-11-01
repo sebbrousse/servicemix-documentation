@@ -45,6 +45,15 @@ limitations under the License.
   	  });
     });
   </script>
+  <script>
+    function guideMenu(){
+    if (document.getElementById('guidelist').style.display == "none") {
+      document.getElementById('guidelist').style.display = "block";
+    } else {
+      document.getElementById('guidelist').style.display = "none";
+      }
+    }
+  </script>
 </head>
 <body>
     <div id="siteHeader">
@@ -65,7 +74,8 @@ limitations under the License.
           <td colspan="2">
             <ul class="siteNav">
               <li><a href="/index.html" title="Home">Home</a></li>
-              <li>Guides</li>
+              <li class="index"><a href="/index.html" onclick="guideMenu(); return false;" id="guidesMenu">Community Guides</a>${include("/toc.ssp")}</li>
+              <li><a href="/commercial.html">Commercial Guides</a></li>
               <li><a href="/contribute.html">Contribute</a></li>
             </ul>
           </td>

@@ -39,7 +39,7 @@
 
 <div class="left">
   <a href="karaf/index.html">
-    <h2>Karaf Manual</h2>
+    <h2>Karaf Documentation</h2>
   </a>
 </div>
 
@@ -55,15 +55,5 @@
 
 <div class="right">
   <p>Help pages for all the available commands in the Apache ServiceMix console.</p>
-</div>
-
-<div class="left">
-  <a href="commercial.html">
-    <h2>Commercial Guides</h2>
-  </a>
-</div>
-
-<div class="right">
-  <p>Documentation from commercial providers and books you can buy.</p>
 </div>
 </div>
