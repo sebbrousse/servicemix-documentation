@@ -1,8 +1,4 @@
 <ul>
-    <li id="camel">
-        <a href="${uri("/users-guide/camel/index.html")}">Using Camel</a>
-        <ul>
-            <li id="camel-deploy"><a href="${uri("/users-guide/camel/camel-deployment.html")}">Deployment options</a></li>
-        </ul>
-    </li>
+  <li id="camel"><a href="${uri("/users-guide/camel/index.html")}">Using Camel</a></li>
+  <li id="camel-deploy"><a href="${uri("/users-guide/camel/camel-deployment.html")}">Deployment options</a></li>
 </ul>
