@@ -85,6 +85,13 @@
       <version>4.8</version>
       <scope>test</scope>
     </dependency>
+      <dependency>
+        <groupId>org.fusesource.scalate</groupId>
+        <artifactId>maven-scalate-plugin</artifactId>
+        <version>${scalate.version}</version>
+        <scope>test</scope>
+      </dependency>      
+      
   </dependencies>
 
   <build>
@@ -97,6 +104,7 @@
           <execution>
             <goals>
               <goal>compile</goal>
+              <goal>testCompile</goal>
             </goals>
           </execution>
         </executions>

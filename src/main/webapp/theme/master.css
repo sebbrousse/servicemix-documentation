@@ -8,6 +8,17 @@ body {
   width: 95%;
   font-size: .8em;
   }
+<<<<<<< HEAD
+
+div#siteHeader {
+  background-color: #76a3cd;
+  padding-left: 20px;
+  padding-right: 20px;
+  clear: both;
+}
+
+div#siteHeader a:link {
+=======
 
 div#siteHeader {
   background-color: #76a3cd;
@@ -21,6 +32,13 @@ div#siteHeader a:link {
   text-decoration: none;
 }
 
+div#siteHeader a:visited {
+>>>>>>> Apache/trunk
+  color: #ffffff;
+  text-decoration: none;
+}
+
+<<<<<<< HEAD
 div#siteHeader a:visited {
   color: #ffffff;
   text-decoration: none;
@@ -112,6 +130,104 @@ div#guidelist .leftlist, div#guidelist .rightlist {
   
 div#guidelist .rightlist {
   float: right;
+=======
+div#siteHeader a:hover {
+  color: #ffffff;
+}
+
+div#siteHeader table, div#siteHeader td {
+  border: none;
+  vertical-align: middle;
+}
+
+ul.siteNav {
+  list-style-type: none;
+  padding:0;
+  margin:0;
+  position: relative;
+  left:40%;
+  }
+  
+ul.siteNav li {
+	display: inline;
+	float: left;
+	padding: 0 20px;
+	}
+
+ul.siteNav li ul {
+  position:absolute;
+  margin-top:-1em;
+	margin-left:.5em;
+	display: none;
+  }
+
+ul.siteNav li a {
+	text-decoration: none;
+	padding: 5px;
+	}
+
+ul.siteNav li:hover ul { 
+display: block; 
+}
+
+ul.siteNav li ul {
+  list-style-type: none;
+  padding:0;
+  margin:0;
+  margin-top:5px;
+  margin-bottom:5px;
+  background-color: #76a3cd;
+}
+
+ul.siteNav li ul li { 
+  clear: both;
+  margin:3px;
+  padding:3px;
+}
+
+div#sectHeader {
+  background: #909090;
+  height: 50px;
+  color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+  vertical-align: top;
+  clear: both;
+  }
+
+div#sectHeader a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+div#sectHeader a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+div#sectHeader a:hover {
+  color: #ffffff;
+}
+
+div#sectHeader table, div#sectHeader td {
+  border: none;
+  }
+  
+div#sectHeader h1 {
+  border: none;
+  padding: 0;
+  margin: 0;
+  }
+  
+ul.sectNav {
+  list-style-type: none;
+  }
+  
+ul.sectNav li {
+  display: inline;
+  font-size: large;
+  padding: 0 40px;
+>>>>>>> Apache/trunk
   }
 
 div#siteFooter {

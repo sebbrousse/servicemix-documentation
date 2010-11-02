@@ -25,16 +25,21 @@ import org.fusesource.scalate.TemplateEngine
 object Helper {
 
   val SITEGEN_ENGINE = "org.fusesource.scalate.maven.DummyTemplateEngine"
-  val TOC = "toc.ssp"
+  val TOC = "/toc.ssp"
+  val SEPARATOR = "/"
 
   /**
    * Determine the right toc file to include for a given uri
    */
-  def toc(uri: String):String = {
-    var result:String = "/"
-    var subUri = uri.substring(1).split("/")
-    for (i <- 0 until subUri.length-1) result += (subUri(i) + "/")
-    result + TOC
+  def toc(uri: String): String = toc(uri, !uri.startsWith("/jbi"))
+
+  def toc(uri: String, recursive: Boolean) = {
+    val elements = uri.substring(1).split(SEPARATOR).toSeq
+    val include = recursive match {
+      case true => elements.take(elements.size - 1)
+      case false => elements.take(1)
+    }
+    include.mkString(SEPARATOR, SEPARATOR, TOC)
   }
 
   /**

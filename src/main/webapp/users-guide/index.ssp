@@ -1,7 +1,7 @@
 <% import org.apache.servicemix.documentation.Helper._ %>
 <% attributes("title") = "User Guides" %>
 <% attributes("navigation") = false %>
-<% attributes("style") = "/theme/picker.css" %>
+<% attributes("style") = uri("/theme/picker.css") %>
 <div id="bookpicker">
 
 <div class="left">
