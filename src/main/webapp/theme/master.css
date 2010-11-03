@@ -40,7 +40,8 @@ ul.siteNav {
   padding:0;
   margin:0;
   position: relative;
-  left:40%;
+  left:30%;
+  width: 70%;
   }
   
 ul.siteNav li {
@@ -62,7 +63,7 @@ ul.siteNav .index a {
   }
 
 div#guidelist {
-  width: 40em;
+  width: 30em;
   display: none;
   background: #537290;
   border-radius: 1em;

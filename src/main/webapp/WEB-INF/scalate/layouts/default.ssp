@@ -81,9 +81,9 @@ limitations under the License.
           <td colspan="2">
             <ul class="siteNav">
               <li><a href="${uri("/index.html")}" title="Home">Home</a></li>
-              <li class="index"><a href="${uri("/index.html")}" onclick="guideMenu(); return false;" id="guidesMenu">Community Guides</a>${include("/toc.ssp")}</li>
-              <li><a href="${uri("/commercial.html")}">Commercial Guides</a></li>
-              <li><a href="${uri("/contribute.html")}">Contribute</a></li>
+              <li class="index"><a href="${uri("/index.html")}" onclick="guideMenu(); return false;" id="guidesMenu" title="Community Guides">Community Guides</a>${include("/toc.ssp")}</li>
+              <li><a href="${uri("/commercial.html")}" title="Commercial Guides">Commercial Guides</a></li>
+              <li><a href="${uri("/contribute.html")}" title="Contribute">Contribute</a></li>
             </ul>
           </td>
         </tr>
