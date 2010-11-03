@@ -16,7 +16,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 --%>
 <%@ var body: String %>
-<%@ var title: String = "" %>
+<%@ var title: String = null %>
 <%@ var style : String = null %>
 <%@ var navigation: Boolean = true %>
 <% escapeMarkup = false %>
@@ -25,7 +25,12 @@ limitations under the License.
 <!DOCTYPE html>
 <html>
 <head>
+  <% if (title != null) { %>
   <title>Apache ServiceMix Documentation - ${title}</title>
+<% } %>
+<% else { %>
+  <title>Apache ServiceMix Documentation</title>
+<% } %>
 
   <link href="${uri("/theme/master.css")}" rel="stylesheet" type="text/css" />
   <link href="${uri("/theme/pygmentize.css")}" rel="stylesheet" type="text/css" />
@@ -75,10 +80,10 @@ limitations under the License.
         <tr>
           <td colspan="2">
             <ul class="siteNav">
-              <li><a href="/index.html" title="Home">Home</a></li>
-              <li class="index"><a href="/index.html" onclick="guideMenu(); return false;" id="guidesMenu">Community Guides</a>${include("/toc.ssp")}</li>
-              <li><a href="/commercial.html">Commercial Guides</a></li>
-              <li><a href="/contribute.html">Contribute</a></li>
+              <li><a href="${uri("/index.html")}" title="Home">Home</a></li>
+              <li class="index"><a href="${uri("/index.html")}" onclick="guideMenu(); return false;" id="guidesMenu">Community Guides</a>${include("/toc.ssp")}</li>
+              <li><a href="${uri("/commercial.html")}">Commercial Guides</a></li>
+              <li><a href="${uri("/contribute.html")}">Contribute</a></li>
             </ul>
           </td>
         </tr>
