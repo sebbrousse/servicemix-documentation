@@ -2,7 +2,7 @@
 <% attributes("title") = "Contributing" %>
 <% attributes("navigation") = false %>
 title: Contributing
---- name:content pipeline:markdown
+--- name:content
 
 # Contributing to the Documentation
 
@@ -19,15 +19,15 @@ an HTML formated list defining the TOC for a book.
 ## Building
 You can build the documentation as follows:
 
-    {pygmentize:: text}
-    mvn install
-    {pygmentize}
+{pygmentize::text}
+mvn install
+{pygmentize}
 
 If you want to edit the files in your text editor and be able to immediately see the site re-rendered in a browser then use
 
-    {pygmentize:: text}
-    mvn jetty:run
-    {pygmentize}
+{pygmentize::text}
+mvn jetty:run
+{pygmentize}
 
 You can now surf the site and see changes immediately.
 

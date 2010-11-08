@@ -1,7 +1,7 @@
 <div id="guidelist">
   <hr/>
   <div class="leftlist">
-    <h1><a href="${uri("/quickstart/index.html")}">Quick Start Guide</a></h1>
+    <h1><a href="${uri("/quickstart-guide/index.html")}">Quick Start Guide</a></h1>
     <h1><a href="${uri("/users-guide/index.html")}">User Guides</a></h1>
     <ul>
       <li><a href="${uri("/users-guide/getting-started/index.html")}">Getting Started</a></li>

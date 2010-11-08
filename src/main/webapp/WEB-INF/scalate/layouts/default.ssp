@@ -77,7 +77,7 @@ limitations under the License.
             </a>
           </td>
         </tr>
-        <tr>
+        <tr class="navRow">
           <td colspan="2">
             <ul class="siteNav">
               <li><a href="${uri("/index.html")}" title="Home">Home</a></li>

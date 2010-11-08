@@ -10,7 +10,6 @@ body {
   }
 
 div#siteHeader {
-  background-color: #76a3cd;
   padding-left: 20px;
   padding-right: 20px;
   clear: both;
@@ -35,6 +34,10 @@ div#siteHeader table, div#siteHeader td {
   vertical-align: middle;
 }
 
+tr.navRow {
+  background-color:  #76a3cd;
+  }
+
 ul.siteNav {
   list-style-type: none;
   padding:0;
@@ -45,10 +48,10 @@ ul.siteNav {
   }
   
 ul.siteNav li {
-display: inline;
-float: left;
-padding: 0 20px;
-}
+	display: inline;
+	float: left;
+	padding: 0 20px;
+	}
 
 ul.siteNav li a {
 text-decoration: none;
@@ -154,7 +157,7 @@ div.highlight pre {
   padding: .5em;
 }
 
-tt {
+tt, code {
   font-family: 'Courier', Courier, monospace;
   font-size: 1em;
 }
@@ -170,6 +173,16 @@ div.tip, div.warn, div.note {
 
 div.tip h1:before {
   content:url(/images/check.gif);
+  padding-right: 10px;
+}
+
+div.note h1:before {
+  content:url(/images/information.gif);
+  padding-right: 10px;
+}
+
+div.warn h1:before {
+  content:url(/images/forbidden.gif);
   padding-right: 10px;
 }
 
@@ -259,4 +272,9 @@ a {
 
 a:hover {
   color: #666;
+}
+
+div#content p {
+  margin: 10px 0;
+  padding: 0;
 }

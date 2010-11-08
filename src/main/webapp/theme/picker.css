@@ -38,3 +38,7 @@ div.pdf {
   padding-left: 20px;
   background: url('images/pdf.png') no-repeat left center;
 }
+
+div#right p {
+  margin: 0;
+}
