@@ -1,0 +1,8 @@
+<ul>
+    <li id="introduction">
+        <a href="${uri("/quickstart-guide/index.html")}">Install and start servicemix</a>
+    </li>
+    <li id="basic-commands">
+        <a href="${uri("/quickstart-guide/console-guide/index.html")}">Basic console commands in 5 steps</a>
+    </li>    
+</ul>
