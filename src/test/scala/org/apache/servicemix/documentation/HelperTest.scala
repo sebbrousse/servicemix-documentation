@@ -17,11 +17,12 @@
  */
 package org.apache.servicemix.documentation
 
+import java.io.File
 import org.apache.servicemix.documentation.Helper._
 import org.junit.Test
 import org.junit.Assert.{assertEquals,assertFalse,assertTrue}
-import org.fusesource.scalate.maven.DummyTemplateEngine
 import org.fusesource.scalate.TemplateEngine
+import org.fusesource.scalate.support.DummyTemplateEngine
 
 /**
  * Test case for org.apache.servicemix.documentation.Helper
@@ -33,13 +34,13 @@ class HelperTest {
     assertValidToc("/users-guide/toc.ssp", "/users-guide/index.conf")
     assertValidToc("/users-guide/camel/toc.ssp", "/users-guide/camel/index.conf")
     assertValidToc("/jbi/toc.ssp", "/jbi/components/index.html")
-
+    assertValidToc("/users-guide/camel/toc.ssp", "/users-guide/camel/deployment/osgi-bundle.conf")
   }
 
   @Test
   def testSitegen = {
     assertTrue("DummyTemplateEngine is used in scalate:sitegen",
-               sitegen(new DummyTemplateEngine(List())))
+               sitegen(new DummyTemplateEngine(Array[File]())))
     assertFalse("Any other template engine means we're not in scalate:sitegen",
                 sitegen(new TemplateEngine()))
 

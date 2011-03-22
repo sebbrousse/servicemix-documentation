@@ -5,13 +5,18 @@
 <div id="bookpicker">
 
 <div class="left">
-  <a href="quickstart-guide/index.html">
+  <a href="quickstart/index.html">
     <h2>Quickstart Guide</h2>
   </a>
 </div>
 
 <div class="right">
   <p>If you're new to Apache ServiceMix, this document will guide you in your first steps in Apache ServiceMix.</p>
+  <% if (sitegen(engine)) { %>
+    <div class="pdf">
+      <a href="quickstart/quickstart.pdf" class="pdf">PDF document</a>
+    </div>
+  <% } %>
 </div>
 
 <div class="left">

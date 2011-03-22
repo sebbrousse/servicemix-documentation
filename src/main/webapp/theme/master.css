@@ -7,7 +7,15 @@ body {
   margin: 0px auto;
   width: 95%;
   font-size: .8em;
-  }
+}
+
+p {
+  margin-top: 1em;
+}
+
+img {
+  margin: 1em;
+}
 
 div#siteHeader {
   padding-left: 20px;
@@ -204,6 +212,11 @@ div.warn {
 }
 
 div.note {
+  background-color: #FFFFDD;
+  border-color: #F7DF92;
+}
+
+div.code {
   background-color: #FFFFDD;
   border-color: #F7DF92;
 }
